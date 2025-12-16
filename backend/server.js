@@ -1,6 +1,15 @@
 const express = require("express");
 const cors = require("cors");
 
+app.use(
+  cors({
+    origin: "https://skadworks.vercel.app",
+    methods: ["GET", "POST"],
+    credentials: true
+  })
+);
+
+
 const app = express();
 
 app.use(cors());
