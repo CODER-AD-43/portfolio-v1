@@ -37,7 +37,7 @@ export default function Home() {
       ) : (
         <>
           <h1>Hi, I’m AD</h1>
-          <p>Web Developer • Graphic Designer • Java Developer</p>
+          <p>Web Developer • Graphic Designer • Software Developer</p>
         </>
       )}
     </section>
