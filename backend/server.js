@@ -18,3 +18,10 @@ app.get("/", (req, res) => {
 // IMPORTANT: dynamic port
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
+
+app.get("/debug/port", (req, res) => {
+  res.json({
+    envPort: process.env.PORT,
+    finalPortUsed: process.env.PORT || 5000
+  });
+});
