@@ -11,7 +11,6 @@ function Graphic() {
 
   // 3️⃣ Fetch data
   useEffect(() => {
-  fetch(`${import.meta.env.VITE_API_URL}/api/projects`)
   getProjects().then(data => {
   setProjects(data.filter(p => p.category === "graphic"));
   setLoading(false);
