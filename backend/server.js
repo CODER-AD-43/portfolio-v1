@@ -9,3 +9,6 @@ app.use("/api/projects", require("./routes/projects"));
 app.use("/api/contact", require("./routes/contact"));
 
 app.listen(5000, () => console.log("Backend running"));
+app.get("/", (req, res) => {
+  res.json({ status: "Backend is running" });
+});
